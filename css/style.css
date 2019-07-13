@@ -1,0 +1,241 @@
+/* ------------------------------- BODY ------------------------------- */
+
+body {
+  color: #111111;
+  font: 400 1rem/1.5 Roboto, sans-serif;
+}
+
+/* ------------------------------ HEADER ------------------------------ */
+
+.page-header {
+  background-color: #F6F9FE;
+}
+
+.page-header-container {
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+/* ------------------------------- LOGO ------------------------------- */
+
+.page-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 a {
+  background: url('../img/rocket.svg') no-repeat;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+/* ------------------------------- NAV -------------------------------- */
+
+.page-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.page-header nav li {
+  display: block;
+  width: calc((100% - 1.5rem) / 2);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.page-header nav a {
+  color: #182F3F;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* ------------------------------- HERO ------------------------------- */
+
+.hero {
+  background: #182F3F url('../img/space.png') no-repeat center bottom;
+  text-align: center;
+  padding: 3rem 1.5rem 5.5rem;
+}
+
+.hero h2, .hero p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  color: #FF9600;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+/* ------------------------------ BOXES ------------------------------- */
+
+.boxes {
+  max-width: 304px;
+  padding: 3rem 1.5rem 0;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #98D0E8;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.box h3 {
+  color: #11212D;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.box .button {
+  display: inline-block;
+  background-color: #EE472C;
+  border-radius: 3rem;
+  color: #FFDE5C;
+  font-weight: 900;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ------------------------------- ABOUT ------------------------------ */
+
+.about {
+  background-color: #2E6E2E;
+}
+
+.about-container {
+  max-width: 548px;
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+}
+
+.about img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.about p {
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------ FOOTER ------------------------------ */
+
+.page-footer {
+  background-color: #0D1A23;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.page-footer p {
+  color: #577489;
+  font-size: 0.8rem;
+}
+
+/* -------------------------- MEDIA  QUERIES -------------------------- */
+
+/* -------------------------- MEDIUM - 700px -------------------------- */
+
+@media only screen and (min-width: 700px) {
+
+  .page-header-container {
+    padding: 1.5rem 2rem;
+  }
+
+  .page-header h1 a{
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .page-header nav ul {
+    max-width: 650px;
+  }
+
+  .page-header nav li {
+    width: auto;
+    margin: 0;
+  }
+
+  .boxes, .about-container {
+    max-width: 640px;
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    align-self: flex-start;
+    width: calc((100% - 5rem) / 2);
+  }
+
+  .about img {
+    float: left;
+    margin: 0 5.5rem 2rem;
+  }
+
+}
+
+/* -------------------------- LARGE - 1024px -------------------------- */
+
+@media only screen and (min-width: 1024px) {
+
+  .page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .page-header h1, .page-header h1 a, .page-header nav ul {
+    margin: 0;
+  }
+
+  .page-header h1 a{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .page-header nav ul {
+    max-width: none;
+  }
+
+  .page-header nav li {
+    margin-left: 4rem;
+  }
+
+  .boxes, .about-container {
+    max-width: 944px;
+  }
+
+  .box {
+    width: calc((100% - 8rem) / 3);
+  }
+
+}
